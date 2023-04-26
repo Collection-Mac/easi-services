@@ -1,423 +1,168 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <title>EASI</title>
   </head>
-  <body class="homepage">
-    <div id="page-wrapper">
-      <!-- Début Header -->
-      <div id="header-wrapper">
-        <header id="header" class="container">
-          <!-- Début Logo -->
-          <div id="logo">
-            <h1>
-              <a href="index.html"><img src="images/LOGO_EASI.png" /></a>
-            </h1>
-          </div>
-          <!-- Fin Logo -->
 
-          <!-- Début Nav -->
-          <nav id="nav">
-            <div class="nav-links">
-              <ul>
-                <li style="white-space: nowrap">
-                  <a href="#">(+225) 0707277998</a>
-                </li>
-                <li class="current" style="white-space: nowrap">
-                  <a href="e-artisan.html">e-artisan</a>
-                </li>
-                <li
-                  class="opener"
-                  style="
-                    user-select: none;
-                    cursor: pointer;
-                    white-space: nowrap;
-                    opacity: 1;
-                  "
-                >
-                  <a href="#">e-commerce</a>
-                  <ul
-                    class=""
-                    style="user-select: none; display: none; position: absolute"
-                  >
-                    <li style="white-space: nowrap">
-                      <a href="#" style="display: block">List1</a>
-                    </li>
-                    <li style="white-space: nowrap">
-                      <a href="#" style="display: block">List1</a>
-                    </li>
-                    <li
-                      class="opener"
-                      style="
-                        user-select: none;
-                        cursor: pointer;
-                        white-space: nowrap;
-                      "
-                    >
-                      <a href="#" style="display: block">List1</a>
-                      <ul
-                        class="droptron"
-                        style="
-                          user-select: none;
-                          display: none;
-                          position: absolute;
-                        "
-                      >
-                        <li style="white-space: nowrap">
-                          <a href="#" style="display: block">List1</a>
-                        </li>
-                        <li style="white-space: nowrap">
-                          <a href="#" style="display: block">List1</a>
-                        </li>
-                        <li style="white-space: nowrap">
-                          <a href="#" style="display: block">List1</a>
-                        </li>
-                        <li style="white-space: nowrap">
-                          <a href="#" style="display: block">List1</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li style="white-space: nowrap">
-                      <a href="#" style="display: block">List1</a>
-                    </li>
-                  </ul>
-                </li>
-                <li style="white-space: nowrap">
-                  <a href="index.html">e-Immobilier</a>
-                </li>
-                <li style="white-space: nowrap">
-                  <a href="index.html">e-agricole</a>
-                </li>
-              </ul>
-            </div>
-            <div class="back-menu-d">
-              <img
-                class="menu-déroulant"
-                src="images/menu-btn.png"
-                alt="Menu déroulant"
-              />
-            </div>
-          </nav>
-          <!-- Fin Nav -->
-        </header>
-      </div>
-      <!-- Fin Header -->
+  <body>
 
-      <!-- Début Banner -->
-      <div id="banner-wrapper">
-        <div id="banner" class="box container">
-          <div class="row">
-            <div class="col-7 col-12-medium">
-              <h2>Bonjour, EASI.</h2>
-              <p>
-                Nous sommes une Plateforme chargée de mettre à votre disposition
-                différentes prestations de services de différents domaines.
-              </p>
-            </div>
-            <div class="col-5 col-12-medium">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    class="button large icon solid fa-arrow-circle-right"
-                    >Besoin de services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="button alt large icon solid fa-question-circle"
-                    >Plus d'infos</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+    <section id="header">
+        <a href="#"><img src="img/logo_easi.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Accueil</a></li>
+                <li><a href="easi-artisan.html">e-artisan</a></li>
+                <li><a href="easi-shop.html">e-commerce</a></li>
+                <li><a href="easi-immobilier.html">e-immobilier</a></li>
+                <li><a href="easi-agricole.html">e-agricole</a></li>
+                <!--<li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>-->
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
         </div>
-      </div>
-      <!-- Fin Banner -->
-
-      <!-- Début Features-->
-      <div id="features-wrapper">
-        <div class="container">
-          <!--
-          <div>
-            <h2 class="title1">Des offres qui peuvent vous intéresser !</h2>
-          </div>
-          -->
-          <div class="row">
-            <div class="col-4 col-10-medium">
-              <!-- Début Boite -->
-              <section class="box feature">
-                <a href="#" class="image featured"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <header>
-                    <h2>Un titre intéressant</h2>
-                    <p>Voici un sous-titre intéressant</p>
-                  </header>
-                  <p>
-                    Bonjour, je suis un paragraphe décrivant le service dont
-                    vous avez besoin. Veuillez cliquez sur le grand titre pour
-                    plus de détails !
-                  </p>
-                </div>
-              </section>
-              <!-- Fin Boite -->
-            </div>
-            <div class="col-4 col-10-medium">
-              <!-- Début Boite -->
-              <section class="box feature">
-                <a href="#" class="image featured"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <header>
-                    <h2>Un titre intéressant</h2>
-                    <p>Voici un sous-titre intéressant</p>
-                  </header>
-                  <p>
-                    Bonjour, je suis un paragraphe décrivant le service dont
-                    vous avez besoin. Veuillez cliquez sur le grand titre pour
-                    plus de détails !
-                  </p>
-                </div>
-              </section>
-              <!-- Fin Boite -->
-            </div>
-            <div class="col-4 col-10-medium">
-              <!-- Début Boite -->
-              <section class="box feature">
-                <a href="#" class="image featured"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <header>
-                    <h2>Un titre intéressant</h2>
-                    <p>Voici un sous-titre intéressant</p>
-                  </header>
-                  <p>
-                    Bonjour, je suis un paragraphe décrivant le service dont
-                    vous avez besoin. Veuillez cliquez sur le grand titre pour
-                    plus de détails !
-                  </p>
-                </div>
-              </section>
-              <!-- Fin Boite -->
-            </div>
-            <div class="col-4 col-10-medium">
-              <!-- Début Boite -->
-              <section class="box feature">
-                <a href="#" class="image featured"
-                  ><img src="images/pic01.jpg" alt=""
-                /></a>
-                <div class="inner">
-                  <header>
-                    <h2>Un titre intéressant</h2>
-                    <p>Voici un sous-titre intéressant</p>
-                  </header>
-                  <p>
-                    Bonjour, je suis un paragraphe décrivant le service dont
-                    vous avez besoin. Veuillez cliquez sur le grand titre pour
-                    plus de détails !
-                  </p>
-                </div>
-              </section>
-              <!-- Fin Boite -->
-            </div>
-          </div>
-          <br>
-          <!--       
-          <div class="btn-offre">
-            <a href="#" class="button-offre">Plus d'offres ...</a>
-          </div>
-          <br />
-          -->
-
-          <div>
-            <!--COMMENT CA MARCHE???-->
-            <div>
-              <h2 class="title2">Comment ça fonction ?</h2>
-            </div>
-
-            <div class="ccm">
-              <div class="boxccm">
-                <!-- Début Boite -->
-                <section class="">
-                  <div class="c-img">
-                    <img src="images/EASI-EMBLEME.png" alt="" />
-                  </div>
-                </section>
-                <!-- Fin Boite -->
-              </div>
-              <div class="boxccm">
-                <!-- Début Boite -->
-                <section class="">
-                  <div class="c-img">
-                    <img src="images/EASI-EMBLEME.png" alt="" />
-                  </div>
-                </section>
-                <!-- Fin Boite -->
-              </div>
-              <div class="boxccm">
-                <!-- Début Boite -->
-                <section class="">
-                  <div class="c-img">
-                    <img src="images/EASI-EMBLEME.png" alt="" />
-                  </div>
-                </section>
-                <!-- Fin Boite -->
-              </div>
-              <div class="boxccm">
-                <!-- Début Boite -->
-                <section class="">
-                  <div class="c-img">
-                    <img src="images/EASI-EMBLEME.png" alt="" />
-                  </div>
-                </section>
-                <!-- Fin Boite -->
-              </div>
-            </div>
-          </div>
+        <div id="mobile">
+            <!--<a href="cart.html"><i class="far fa-shopping-bag"></i></a>-->
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
-      </div>
-      <!-- Fin Features-->
+    </section>
 
-      <!-- Debut main-->
-      <div id="main-wrapper">
-        <div class="container">
-          <div class="row gtr-200">
-            <div class="col-4-1 col-12-medium">
-              <!-- Sidebar -->
-              <div id="sidebar">
-                <section class="widget thumbnails">
-                  <h3>Nos partenaires</h3>
-                  <div class="grid">
-                    <div class="row gtr-50">
-                      <div class="col-6">
-                        <a href="https://laposte.ci.post/" class="image fit"
-                          ><img src="images/logo-poste.png" alt="La Poste"
-                        /></a>
-                      </div>
-                      <div class="col-6">
-                        <a href="#" class="image fit"
-                          ><img src="images/pic05.jpg" alt=""
-                        /></a>
-                      </div>
-                      <div class="col-6">
-                        <a href="#" class="image fit"
-                          ><img src="images/pic06.jpg" alt=""
-                        /></a>
-                      </div>
-                      <div class="col-6">
-                        <a href="#" class="image fit"
-                          ><img src="images/pic07.jpg" alt=""
-                        /></a>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="button more">Plus</a>
-                </section>
-              </div>
-            </div>
-            <div class="col-8 col-12-medium imp-medium">
-              <!-- Content -->
-              <div id="content">
-                <section class="last">
-                  <h2>Qui sommes-nous ?</h2>
-                  <p>
-                    EASI (Entreprise Africaine de Solution Innovante) est un
-                    cabinet chargé de mettre à votre disposition différents
-                    prestataires de services de différents domaines en seulement
-                    quelques temps.
-                  </p>
-                  <p>
-                    Des prestataires professionnels, fiables pour vos besoins.
-                  </p>
-                  <a href="#" class="button more">Rejoignez-nous !</a>
-                </section>
-              </div>
-            </div>
-          </div>
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off !</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>.</h4>
+            <h2>.</h2>
+            <span>.</span>
+            <button class="white">Learn More</button>
         </div>
-      </div>
-      <!-- Fin main-->
 
-      <!-- Footer -->
-      <div id="footer-wrapper">
-        <footer id="footer" class="container">
-          <div class="propos"><h3>A Propos !</h3></div>
-          <div class="row" style="margin-bottom: 40px">
-            <!-- Lien -->
-            <div class="col-3 col-6-medium col-12-small">
-              <section class="widget links">
-                <!--<h3>Random Stuff</h3>-->
-                <ul class="style2">
-                  <li><a href="#">Qui sommes-nous ?</a></li>
-                </ul>
-              </section>
-            </div>
+        <div class="banner-box banner-box2">
+            <h4>.</h4>
+            <h2>.</h2>
+            <span>.</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
 
-            <!-- Lien -->
-            <div class="col-3 col-6-medium col-12-small">
-              <section class="widget links">
-                <!--<h3>Random Stuff</h3>-->
-                <ul class="style2">
-                  <li><a href="#">Etiam feugiat condimentum</a></li>
-                </ul>
-              </section>
-            </div>
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection -50% OFF</h3>
+        </div>
 
-            <!-- Lien -->
-            <div class="col-3 col-6-medium col-12-small">
-              <section class="widget links">
-                <!--<h3>Random Stuff</h3>-->
-                <ul class="style2">
-                  <li><a href="#">Etiam feugiat condimentum</a></li>
-                </ul>
-              </section>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div id="copyright">
-                <ul class="menu">
-                  <li>Copyright&copy;.EASI</li>
-                  <li>Mac Collection: <a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
+        <div class="banner-box banner-box2">
+            <h2>NEW FOOTWEAR COLLECTION</h2>
+            <h3>Spring/Summer 2023</h3>
+        </div>
 
-      <!-- Back To Top Start -->
-      <a
-        id="top"
-        href="index.html"
-        class="off on"
-        style="background-color: #3d5354; color: #fff"
-        ><i>home</i></a
-      >
-      <!-- Back To Top End -->
-    </div>
+        <div class="banner-box banner-box3">
+            <h2>T'SHIRTS</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E'mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email adress">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <section id="feature " class="section-p1">
+        <h2 class="part">Nos Partenaires</h2>
+        <p>Ils nous font confiance</p>
+        <div class="fe-box">
+            <a href="laposte.ci">
+                <img src="img/home/logo-poste.png" alt="">
+            </a>
+            <!--<h6>Free Shipping</h6>-->
+        </div>
+        <!--<div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Oneline Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Pomotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>-->
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo_easi.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Adress: </strong>Carrefour Bonoua 1, voie non bitumée</p>
+            <p><strong>Phone: </strong>(+225) 0707277998</p>
+            <p><strong>Hours: </strong>08:00 - 17:00, Lundi - Vendredi</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/play.jpg" alt="">
+                <img src="img/pay/app.jpg" alt="">
+            </div>
+            <p>Secured Payment Geteways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2023, easi</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
   </body>
-
-  <script>
-    const menuDéroulant = document.querySelector(".menu-déroulant");
-    const navLinks = document.querySelector(".nav-links");
-
-    menuDéroulant.addEventListener("click", () => {
-      navLinks.classList.toggle("menu-mobile");
-    });
-  </script>
 </html>
