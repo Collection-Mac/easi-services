@@ -70,6 +70,230 @@ body {
   width: 100%;
 }
 
+/***********DEBUT-FORMULAIRE*************/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+#form-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  /*margin: -20px 0 50px;*/
+}
+
+.container {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgb(0, 32, 63, .45);
+  overflow: hidden;
+  min-height: 600px;
+  width: 768px;
+  max-width: 100%;
+}
+
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: .6s ease-in-out;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Animation */
+.container.panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show .6s
+}
+
+@keyframes show {
+  0%, 49.99% {
+      opacity: 0;
+      z-index: 1;
+  }
+
+  50%, 100% {
+      opacity: 1;
+      z-index: 5;
+  }
+}
+
+.container.panel-active .login-container {
+  transform: translateX(100%);
+}
+/* fin-Animation */
+
+
+.login-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+#form input {
+  background-color: #ffa6207e;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button.ghost {
+background: ;
+}
+
+#form button {
+  background-color: #00614a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 25px;
+  margin-top: 24px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background: transparent;
+  color: #ff8c20;
+  border: 1px solid #088178;
+  transition: 0.3s;
+}
+
+button:active {
+  transform: scale(.95);
+}
+
+.social-container {
+  margin: 24px 0;
+}
+
+.social-container a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ffa6207e;
+  border: 1px solid rgb(0, 32, 63, .45);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: normal;
+}
+
+span {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  transition: transform .6s ease-in-out;
+}
+
+/* Animation */
+.container.panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: linear-gradient(to right, #ffa6207e, #e7f0fd );
+  background: #ffa6207e;
+  color: #00203f;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform .6s ease-in-out;
+}
+
+/* Animation */
+.container.panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform .6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.container.panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right:0;
+  transform: translateX(0);
+}
+
+.container.panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+#form-p {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .5px;
+  margin: 20px 0 30px;
+}
+/***********FIN-FORMULAIRE*************/
+
 /*  Header Start  */
 
 .logo {
@@ -150,15 +374,28 @@ body {
   justify-content: center;
 }
 
-#hero h4 {
+#hero1 {
+  background-image: url("img/home/easi.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 40% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4, #hero1 h4 {
   padding-bottom: 15px;
 }
 
-#hero h1 {
+#hero h1, #hero1 h1 {
   color: #00614a;
 }
 
-#hero button {
+#hero button, #hero1 button {
   background-image: url("img/button.png");
   background-color: transparent;
   color: #00614a;
@@ -358,7 +595,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/home/f1.jpg);
+  background-image: url(img/banner/b17.jpg);
   background-size: cover;
   background-position: center;
   min-width: 580px;
@@ -367,6 +604,23 @@ body {
 }
 
 #sm-banner .banner-box2 {
+  background-image: url(img/banner/b10.jpg);
+}
+
+#sm-banner .banner-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/home/f1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 580px;
+  height: 50vh;
+  padding: 30px;
+}
+
+#sm-banner .banner-box4 {
   background-image: url(img/home/f2.jpg);
 }
 
@@ -423,6 +677,28 @@ body {
   background-image: url(img/banner/b18.jpg);
 }
 
+#banner3 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(img/home/easi1.jpg);
+  background-size: cover;
+  background-position: center;
+  min-width: 30%;
+  height: 30vh;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .box1 {
+  background-image: url(img/banner/.jpg);
+}
+
+#banner3 .box2 {
+  background-image: url(img/banner/b.jpg);
+}
+
 #banner3 h2 {
   color: #fff;
   font-weight: 900;
@@ -454,7 +730,7 @@ body {
 
 #newsletter p {
   color: #201d1c;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -720,6 +996,11 @@ footer .copyright {
   margin: 15px 0;
 }
 
+#featurart1 .fe-box1 {
+  width: 50%;
+  text-align: initial;
+}
+
 #featurart1 .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.03);
 }
@@ -832,6 +1113,25 @@ footer .copyright {
 
 #productart .pro .heart {
   
+}
+
+#product1 button {
+  background: #088178;
+  color: #090c0b;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#product1 button:hover {
+  background: transparent;
+  color: #ff8c20;
+  border: 1px solid #088178;
+  transition: 0.3s;
 }
 
 
