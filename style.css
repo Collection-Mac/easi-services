@@ -375,7 +375,7 @@ a {
 }
 
 #hero1 {
-  background-image: url("img/home/easi.jpg");
+  background-image: url("img/home/Ba1.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -586,7 +586,7 @@ a {
 
 #sm-banner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -692,11 +692,11 @@ a {
 }
 
 #banner3 .box1 {
-  background-image: url(img/banner/.jpg);
+  background-image: url(img/home/easi1.jpg);
 }
 
 #banner3 .box2 {
-  background-image: url(img/banner/b.jpg);
+  background-image: url(img/home/easi1.jpg);
 }
 
 #banner3 h2 {
@@ -935,7 +935,7 @@ footer .copyright {
   width: 180px;
   text-align: center;
   padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  /**box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);**/
   border-radius: 4px;
   margin: 15px 0;
 }
@@ -1329,7 +1329,7 @@ footer .copyright {
     right: -300px;
     height: 100vh;
     width: 300px;
-    background-color: #ff792085;
+    background-color: #fff;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 80px 0 0 10px;
     transition: 0.3s;
@@ -1368,10 +1368,16 @@ footer .copyright {
     display: none;
   }
 
-  #hero {
+  #hero, #heroart {
     height: 70vh;
     padding: 0 80px;
     background-position: top 30% right 30%;
+  }
+
+  #hero1 {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 95%;
   }
 
   #feature {
@@ -1382,11 +1388,41 @@ footer .copyright {
     margin: 15px 15px;
   }
 
+  #featurart .fe-box{
+    width: 50%;
+  }
+
+  #featurart .fe-box h6 {
+    display: inherit;
+  }
+
+  #featurart1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #featurart1 .fe-box {
+    width: inherit;
+  }
+
+  #featurart1 .fe-box1 {
+    width: inherit;
+    text-align: inherit;
+  }
+
   #product1 .pro-container {
     justify-content: center;
   }
 
+  #productart .pro-container {
+    justify-content: center;
+  }
+
   #product1 .pro {
+    margin: 15px;
+  }
+
+  #productart .pro {
     margin: 15px;
   }
 
@@ -1431,7 +1467,7 @@ footer .copyright {
     font-size: 32px;
   }
 
-  #hero {
+  #hero, #heroart {
     padding: 0 20px;
     background-position: 55%;
   }
@@ -1446,6 +1482,10 @@ footer .copyright {
   }
 
   #product1 .pro {
+    width: 100%;
+  }
+
+  #productart .pro {
     width: 100%;
   }
 
