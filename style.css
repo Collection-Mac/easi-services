@@ -82,7 +82,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   /*margin: -20px 0 50px;*/
 }
@@ -90,7 +90,7 @@ body {
 .container {
   position: relative;
   background-color: #fff;
-  box-shadow: 0 8px 24px rgb(0, 32, 63, .45);
+  box-shadow: 0 8px 24px rgb(0, 32, 63, 0.45);
   overflow: hidden;
   min-height: 600px;
   width: 768px;
@@ -101,7 +101,7 @@ body {
   position: absolute;
   top: 0;
   height: 100%;
-  transition: .6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .sign-up-container {
@@ -116,18 +116,20 @@ body {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
-  animation: show .6s
+  animation: show 0.6s;
 }
 
 @keyframes show {
-  0%, 49.99% {
-      opacity: 0;
-      z-index: 1;
+  0%,
+  49.99% {
+    opacity: 0;
+    z-index: 1;
   }
 
-  50%, 100% {
-      opacity: 1;
-      z-index: 5;
+  50%,
+  100% {
+    opacity: 1;
+    z-index: 5;
   }
 }
 
@@ -135,7 +137,6 @@ body {
   transform: translateX(100%);
 }
 /* fin-Animation */
-
 
 .login-container {
   left: 0;
@@ -163,7 +164,7 @@ form {
 }
 
 button.ghost {
-background: ;
+  background: ;
 }
 
 #form button {
@@ -187,7 +188,7 @@ background: ;
 }
 
 button:active {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .social-container {
@@ -203,7 +204,7 @@ button:active {
   width: 40px;
   border-radius: 50%;
   background-color: #ffa6207e;
-  border: 1px solid rgb(0, 32, 63, .45);
+  border: 1px solid rgb(0, 32, 63, 0.45);
 }
 
 h1 {
@@ -229,7 +230,7 @@ a {
   height: 100%;
   overflow: hidden;
   z-index: 100;
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 /* Animation */
@@ -238,7 +239,7 @@ a {
 }
 
 .overlay {
-  background: linear-gradient(to right, #ffa6207e, #e7f0fd );
+  background: linear-gradient(to right, #ffa6207e, #e7f0fd);
   background: #ffa6207e;
   color: #00203f;
   position: relative;
@@ -246,7 +247,7 @@ a {
   height: 100%;
   width: 200%;
   transform: translateX(0);
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 /* Animation */
@@ -266,7 +267,7 @@ a {
   height: 100%;
   width: 50%;
   transform: translateX(0);
-  transition: transform .6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .overlay-left {
@@ -278,7 +279,7 @@ a {
 }
 
 .overlay-right {
-  right:0;
+  right: 0;
   transform: translateX(0);
 }
 
@@ -289,7 +290,7 @@ a {
 #form-p {
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   margin: 20px 0 30px;
 }
 /***********FIN-FORMULAIRE*************/
@@ -350,6 +351,30 @@ a {
   left: 1px;
 }
 
+.menu-pres {
+  display: none;
+  position: absolute;
+  background-color: #e3e6f3f3;
+  width: 200px;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 10px;
+}
+
+#navbar ul li a:hover {
+  color: #fff;
+}
+
+.menu-pres li:hover {
+  background-color: #088178;
+}
+
+#navbar li:hover .menu-pres {
+  display: block;
+}
+
 #mobile {
   display: none;
   align-items: center;
@@ -387,15 +412,18 @@ a {
   justify-content: center;
 }
 
-#hero h4, #hero1 h4 {
+#hero h4,
+#hero1 h4 {
   padding-bottom: 15px;
 }
 
-#hero h1, #hero1 h1 {
+#hero h1,
+#hero1 h1 {
   color: #00614a;
 }
 
-#hero button, #hero1 button {
+#hero button,
+#hero1 button {
   background-image: url("img/button.png");
   background-color: transparent;
   color: #00614a;
@@ -1112,7 +1140,6 @@ footer .copyright {
 }
 
 #productart .pro .heart {
-  
 }
 
 #product1 button {
@@ -1134,8 +1161,6 @@ footer .copyright {
   transition: 0.3s;
 }
 
-
-
 /*  Shop Page  */
 
 #page-header {
@@ -1148,9 +1173,10 @@ footer .copyright {
   flex-direction: column;
   text-align: center;
   padding: 14px;
-} 
+}
 
-#page-header h2, #page-header p {
+#page-header h2,
+#page-header p {
   color: #fff;
 }
 
@@ -1304,17 +1330,141 @@ footer .copyright {
   z-index: -9;
 }
 
-
 /*  About Page  */
 
+#page-header.about-header {
+  background-image: url("img/about/banner.png");
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
 /*  Contact Page  */
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details .details span {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2{
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-details .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-details .people p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
 
 /*  Cart Page  */
 
 /*  Start Media Query  */
 
 @media screen and (max-width: 799px) {
-
   .section-p1 {
     padding: 40px 40px;
   }
@@ -1343,6 +1493,16 @@ footer .copyright {
     margin-bottom: 25px;
   }
 
+  #navbar .log {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .menu-pres {
+    background-color: #e3e6f3;
+    position: inherit;
+  }
+
   #mobile {
     display: flex;
     align-items: center;
@@ -1353,6 +1513,11 @@ footer .copyright {
     font-size: 24px;
     padding-left: 20px;
     cursor: pointer;
+  }
+
+  span {
+    color: #fff;
+    font-size: 0;
   }
 
   #close {
@@ -1368,7 +1533,8 @@ footer .copyright {
     display: none;
   }
 
-  #hero, #heroart {
+  #hero,
+  #heroart {
     height: 70vh;
     padding: 0 80px;
     background-position: top 30% right 30%;
@@ -1388,7 +1554,7 @@ footer .copyright {
     margin: 15px 15px;
   }
 
-  #featurart .fe-box{
+  #featurart .fe-box {
     width: 50%;
   }
 
@@ -1440,17 +1606,24 @@ footer .copyright {
   }
 
   #banner3 .banner-box {
-
   }
 
   #newsletter .form {
     width: 70%;
   }
 
+  /* Contact Page */
+  #form-details {
+    padding: 40px;
+  }
+
+  #form-details form {
+    width: 50%;
+  }
+
 }
 
 @media screen and (max-width: 477px) {
-
   .section-p1 {
     padding: 20px;
   }
@@ -1467,7 +1640,8 @@ footer .copyright {
     font-size: 32px;
   }
 
-  #hero, #heroart {
+  #hero,
+  #heroart {
     padding: 0 20px;
     background-position: 55%;
   }
@@ -1550,12 +1724,48 @@ footer .copyright {
 
   #blog .blog-img {
     width: 100%;
-    margin-right: 0px ;
+    margin-right: 0px;
     margin-bottom: 30px;
   }
 
   #blog .blog-details {
     width: 100%;
+  }
+
+  /*  About Page  */
+
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Page */
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .map {
+    width: 100%;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 
 
