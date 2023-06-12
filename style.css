@@ -314,6 +314,32 @@ a {
   left: 0;
 }
 
+#header-p {
+  background-color: #ef7900;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 80px;
+
+}
+
+#header-p #navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+#header-p .menu-pres {
+  display: none;
+  position: absolute;
+  background-color: #ef7700ea;
+  width: 200px;
+}
+
 #navbar {
   display: flex;
   align-items: center;
@@ -938,11 +964,11 @@ footer .copyright {
   color: #090c0b;
   border: 0;
   border-radius: 10px;
-  padding: 14px 80px 14px 65px;
+  padding: 14px 35px 14px 35px;
   background-repeat: no-repeat;
   cursor: pointer;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #heroart button:hover {
@@ -955,7 +981,7 @@ footer .copyright {
 #featurart {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -1142,19 +1168,19 @@ footer .copyright {
 #productart .pro .heart {
 }
 
-#product1 button {
+#product1 button, #productart button {
   background: #088178;
   color: #090c0b;
   border: 0;
   border-radius: 10px;
-  padding: 14px 80px 14px 65px;
+  padding: 14px 30px 14px 30px;
   background-repeat: no-repeat;
   cursor: pointer;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 
-#product1 button:hover {
+#product1 button:hover, #productart button:hover {
   background: transparent;
   color: #ff8c20;
   border: 1px solid #088178;
