@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="librairie-style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <title>easi-librairie | Panier</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="index.html"><img src="img/logo_easi.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="librairie.html">Accueil</a></li>
+                <li><a href="">Primaire <i class="fas fa-angle-down"></i></a>
+                    <ul class="menu-pres">
+                        <li><a href="l-cp1.html">CP1</a></li>
+                        <li><a href="#">CP2</a></li>
+                        <li><a href="#">CE1</a></li>
+                        <li><a href="#">CE2</a></li>
+                        <li><a href="#">CM1</a></li>
+                        <li><a href="#">CM2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Secondaire <i class="fas fa-angle-down"></i></a>
+                    <ul class="menu-pres">
+                        <li><a href="#">6ème</a></li>
+                        <li><a href="#">5ème</a></li>
+                        <li><a href="#">4ème</a></li>
+                        <li><a href="#">3ème</a></li>
+                        <li><a href="#">2nde</a></li>
+                        <li><a href="#">1ère</a></li>
+                        <li><a href="#">TLe</a></li>
+                    </ul>
+                </li>
+                <li><a href=".html">Cahier&Divers <i class="fas fa-angle-down"></i></a>
+                    <ul class="menu-pres">
+                        <li><a href="#">Cahiers & Stylos</a></li>
+                        <li><a href="#">Ensembles géométriques</a></li>
+                        <li><a href="#">Dictionnaires</a></li>
+                        <li><a href="#">Papiers rames</a></li>
+                        <li><a href="#">Xxxx</a></li>
+                        <li><a href="#">xxxx</a></li>
+                        <li><a href="#">xxxxX</a></li>
+                    </ul>
+                </li>
+                <li><a href="librairie-contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="librairie-cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="librairie-cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!--<section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you !</p>
+    </section>-->
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>RETIRER</td>
+                    <td>IMAGE</td>
+                    <td>PRODUIT</td>
+                    <td>PRIX</td>
+                    <td>QUANTITEE</td>
+                    <td>SOUS-TOTAL</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/librairie/i1.jpg"</td>
+                    <td>XXxxxxxxxxxx</td>
+                    <td>00FCFA</td>
+                    <td><input type="number" value="1"></td>
+                    <td>00FCFA</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/librairie/i2.jpg"</td>
+                    <td>xXXXxxxxXxxx</td>
+                    <td>00FCFA</td>
+                    <td><input type="number" value="1"></td>
+                    <td>00FCFA</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/librairie/i1.jpg"</td>
+                    <td>xXXXxxxxXxxx</td>
+                    <td>00FCFA</td>
+                    <td><input type="number" value="1"></td>
+                    <td>00FCFA</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Utiliser un coupon</h3>
+            <div>
+                <input type="text" placeholder="Entrez votre coupon">
+                <button class="normal">Utiliser</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Totaux du panier</h3>
+            <table>
+                <tr>
+                    <td>Sous-total du panier</td>
+                    <td>00FCFA</td>
+                </tr>
+                <tr>
+                    <td>Livraison</td>
+                    <td>Gratuite</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>00FCFA</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Je passe la commande</button>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Inscrivez Vous au Newsletter</h4>
+            <p>Contactez nous <a href="#"><span>ici</span></a></p>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Your email adress">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo_easi.png" alt="">
+            <h4>CONTACTS</h4>
+            <p><strong>Adress: </strong>Carrefour Bonoua 1, voie non bitumée</p>
+            <p><strong>Phone: </strong>(+225) 0707277998</p>
+            <p><strong>Hours: </strong>08:00 - 17:00, Lundi - Vendredi</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-whatsapp fa-lg" style="color: #03a541;"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>A PROPOS</h4>
+            <a href="#">Qui sommes-nous</a>
+            <a href="#">Informations de livraison</a>
+            <a href="#">Politique de confidentialité</a>
+            <a href="#">Termes et conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>ACHAT</h4>
+            <!--<a href="#">Sign In</a>
+            <a href="#">View Cart</a>-->
+            <a href="#">Ma liste</a>
+            <!--<a href="#">Track My Order</a>-->
+            <a href="#">Besoin d'aide</a>
+        </div>
+        <div class="col install">
+            <!--<h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/play.jpg" alt="">
+                <img src="img/pay/app.jpg" alt="">
+            </div>-->
+            <p>Moyens de Paiemant</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2023, easi-civ</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
