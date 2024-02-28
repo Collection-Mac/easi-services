@@ -413,7 +413,7 @@ a {
 /*  Home Page  */
 
 #hero {
-  background-image: url("img/hero4.png");
+  background-image: url("/images/hero4.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -426,7 +426,7 @@ a {
 }
 
 #hero1 {
-  background-image: url("img/home/Ba1.jpg");
+  background-image: url("/images/home/Ba1.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -450,7 +450,7 @@ a {
 
 #hero button,
 #hero1 button {
-  background-image: url("img/button.png");
+  background-image: url("/images/button.png");
   background-color: transparent;
   color: #00614a;
   border: 0;
@@ -610,7 +610,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(img/banner/b2.jpg);
+  background-image: url(/images/banner/b2.jpg);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -649,7 +649,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/banner/b17.jpg);
+  background-image: url(/images/banner/b17.jpg);
   background-size: cover;
   background-position: center;
   min-width: 580px;
@@ -658,7 +658,7 @@ a {
 }
 
 #sm-banner .banner-box2 {
-  background-image: url(img/banner/b10.jpg);
+  background-image: url(/images/banner/b10.jpg);
 }
 
 #sm-banner .banner-box3 {
@@ -666,7 +666,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/home/f1.jpg);
+  background-image: url(/images/home/f1.jpg);
   background-size: cover;
   background-position: center;
   min-width: 580px;
@@ -675,7 +675,7 @@ a {
 }
 
 #sm-banner .banner-box4 {
-  background-image: url(img/home/f2.jpg);
+  background-image: url(/images/home/f2.jpg);
 }
 
 #sm-banner h4 {
@@ -714,7 +714,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/banner/b7.jpg);
+  background-image: url(/images/banner/b7.jpg);
   background-size: cover;
   background-position: center;
   min-width: 30%;
@@ -724,11 +724,11 @@ a {
 }
 
 #banner3 .banner-box2 {
-  background-image: url(img/banner/b4.jpg);
+  background-image: url(/images/banner/b4.jpg);
 }
 
 #banner3 .banner-box3 {
-  background-image: url(img/banner/b18.jpg);
+  background-image: url(/images/banner/b18.jpg);
 }
 
 #banner3 .box {
@@ -736,7 +736,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(img/home/easi1.jpg);
+  background-image: url(/images/home/easi1.jpg);
   background-size: cover;
   background-position: center;
   min-width: 30%;
@@ -746,11 +746,11 @@ a {
 }
 
 #banner3 .box1 {
-  background-image: url(img/home/easi1.jpg);
+  background-image: url(/images/home/easi1.jpg);
 }
 
 #banner3 .box2 {
-  background-image: url(img/home/easi1.jpg);
+  background-image: url(/images/home/easi1.jpg);
 }
 
 #banner3 h2 {
@@ -770,7 +770,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-image: url("img/banner/b14.png");
+  background-image: url("/images/banner/b14.png");
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #088178;
@@ -931,7 +931,7 @@ footer .copyright {
 }
 
 #heroart {
-  background-image: url("img/artisan/hero3.jpg");
+  background-image: url("/images/artisan/hero3.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -1190,7 +1190,7 @@ footer .copyright {
 /*  Shop Page  */
 
 #page-header {
-  background-image: url(img/banner/b1.jpg);
+  background-image: url(/images/banner/b1.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -1289,7 +1289,7 @@ footer .copyright {
 /*  Blog Page  */
 
 #page-header.blog-header {
-  background-image: url("img/banner/b19.jpg");
+  background-image: url("/images/banner/b19.jpg");
 }
 
 #blog {
@@ -1359,7 +1359,7 @@ footer .copyright {
 /*  About Page  */
 
 #page-header.about-header {
-  background-image: url("img/about/banner.png");
+  background-image: url("/images/about/banner.png");
 }
 
 #about-head {
